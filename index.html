@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from colorlib.com/etc/bwiz/colorlib-wizard-29/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Feb 2024 06:30:11 GMT -->
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="AuThemes Templates">
+  <meta name="author" content="AuCreative">
+  <meta name="keywords" content="AuThemes Templates">
+
+  <title>Au Form Wizard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+  <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href="css/main.css" rel="stylesheet" media="all">
+  <meta name="robots" content="noindex, follow">
+  <style>
+    .nav {
+      display: block !important;
+    }
+
+    ul li {
+      display: inline-block;
+    }
+
+    ul {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="card card-1">
+          <div class="card-heading">
+            <h2 class="title">Mortgage Calculator</h2>
+          </div>
+          <div class="card-body">
+            <form class="wizard-container" method="POST" action="#" id="js-wizard-form">
+              <ul class="tab-list">
+                <li class="tab-list__item active">
+                  <a class="tab-list__link" href="#tab1" data-toggle="tab">
+                    <span class="desc">Input</span>
+                  </a>
+                </li>
+                <li class="tab-list__item">
+                  <a class="tab-list__link" href="#tab2" data-toggle="tab">
+                    <span class="desc">Table</span>
+                  </a>
+                </li>
+                <li class="tab-list__item">
+                  <a class="tab-list__link" href="#tab3" data-toggle="tab">
+                    <span class="desc">Graph</span>
+                  </a>
+                </li>
+                <li class="tab-list__item">
+                  <a class="tab-list__link" href="#tab4" data-toggle="tab">
+                    <span class="desc">Chart</span>
+                  </a>
+                </li>
+                <li class="tab-list__item">
+                  <a class="tab-list__link" href="#tab5" data-toggle="tab">
+                    <span class="desc">Sum</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Property Value</label>
+                            <input type="text" class="form-control" id="pValue">
+                            <div id="pValueEror" class="form-text d-none">We'll never share your email with anyone else.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Down Payment</label>
+                              <input type="text" class="form-control" id="dPayment">
+                              <div id="dPaymentEror" class="form-text d-none">We'll never share your email with anyone
+                                else.</div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">%</label>
+                              <input type="text" class="form-control" id="percentage">
+                              <div id="percentageEror" class="form-text d-none">We'll never share your email with anyone
+                                else.</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Principal Amount</label>
+                            <input type="text" class="form-control" id="pAmount">
+                            <div id="pAmountEror" class="form-text d-none">We'll never share your email with anyone
+                              else.</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Interest %</label>
+                            <input type="text" class="form-control" id="interest">
+                            <div id="interestEror" class="form-text d-none">We'll never share your email with anyone
+                              else.</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Years</label>
+                            <input type="text" class="form-control" id="interest">
+                            <div id="interestEror" class="form-text d-none">We'll never share your email with anyone
+                              else.</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Payment</label>
+                            <input type="text" class="form-control" id="interest">
+                            <div id="interestEror" class="form-text d-none">We'll never share your email with anyone
+                              else.</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3 text-end">
+                            <h5 style="color: green;">Total <span style="color: black;">41760</span></h5>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                  <ul class="tab-list">
+                    <li class="tab-list__item active">
+                      <a class="tab-list__link" href="#year" data-toggle="tab">
+                        <span class="desc">Annual</span>
+                      </a>
+                    </li>
+                    <li class="tab-list__item">
+                      <a class="tab-list__link" href="#Period" data-toggle="tab">
+                        <span class="desc">Period</span>
+                      </a>
+                    </li>
+                    <li class="tab-list__item">
+                      <a class="tab-list__link" href="#payment" data-toggle="tab">
+                        <span class="desc">Payment</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="year">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Year</th>
+                                  <th scope="col">Interest</th>
+                                  <th scope="col">Principal</th>
+                                  <th scope="col">LTV</th>
+                                  <th scope="col">Balance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="Period">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Month</th>
+                                  <th scope="col">Interest</th>
+                                  <th scope="col">Principal</th>
+                                  <th scope="col">Total</th>
+                                  <th scope="col">Balance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="payment">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Month</th>
+                                  <th scope="col">Payment</th>
+                                  <th scope="col">Extra</th>
+                                  <th scope="col">Total</th>
+                                  <th scope="col">Balance</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2024</th>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                  <td>4,334</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="tab3">
+                  <ul class="tab-list">
+                    <li class="tab-list__item active">
+                      <a class="tab-list__link" href="#payment" data-toggle="tab">
+                        <span class="desc">Payment</span>
+                      </a>
+                    </li>
+                    <li class="tab-list__item">
+                      <a class="tab-list__link" href="#balance" data-toggle="tab">
+                        <span class="desc">Balance</span>
+                      </a>
+                    </li>
+                    <li class="tab-list__item">
+                      <a class="tab-list__link" href="#interest" data-toggle="tab">
+                        <span class="desc">Interest</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="payment">
+                      <div id="chart"></div>
+                    </div>
+                    <div class="tab-pane" id="balance">
+                      <div id="chart1"></div>
+                    </div>
+                    <div class="tab-pane" id="interest">
+                      <div id="chart2"></div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane" id="tab4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div id="chart4"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane" id="tab5">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Property Value <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Down Payment <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Interest <span>$100,000</span></h4>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Term <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Payment <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Expense <span>$100,000</span></h4>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Start Date <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>End Date <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Term Length <span>$100,000</span></h4>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Term Reduction <span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Total Interest<span>$100,000</span></h4>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Total Payment <span>$100,000</span></h4>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+  <script src="vendor/bootstrap-wizard/bootstrap.min.js"></script>
+  <script src="vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+  <script src="js/global.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script>
+    var options = {
+      series: [{
+        name: "STOCK ABC",
+        data: [10, 15, 20, 18, 25],
+      }],
+      chart: {
+        type: 'area',
+        height: 350,
+        zoom: {
+          enabled: false
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'straight'
+      },
+      title: {
+        text: 'Fundamental Analysis of Stocks',
+        align: 'center'
+      },
+
+      labels: ["2024-01-01", "2024-01-02", "2024-01-03", "2024-01-04", "2024-01-05"],
+      xaxis: {
+        type: 'datetime',
+      },
+      yaxis: {
+        opposite: true
+      },
+      legend: {
+        horizontalAlign: 'left'
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+    var chart1 = new ApexCharts(document.querySelector("#chart1"), options);
+    chart1.render();
+    var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
+    chart2.render();
+  </script>
+  <script>
+    var options = {
+      series: [25, 75],
+      chart: {
+        width: 380,
+        type: 'pie',
+      },
+      labels: ['Team A', 'Team B'],
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart4"), options);
+    chart.render();
+  </script>
+</body>
+
+<!-- Mirrored from colorlib.com/etc/bwiz/colorlib-wizard-29/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Feb 2024 06:30:14 GMT -->
+
+</html>
